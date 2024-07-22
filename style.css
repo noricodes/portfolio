@@ -30,12 +30,14 @@ header {
     background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(5px);
     display: block;
-    position: sticky;
+    position: fixed;
     height: 100px;
+    width: 100%;
     text-align: end;
     align-content: center;
     padding-right: 40px;
     top: 0;
+    z-index: 11;
 }
 
 .top-nav-bar {
@@ -115,6 +117,85 @@ header {
     margin: 0px auto;
     background-color: #a8b2d1;
 }
+
+.email {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: #a8b2d1;
+    /* display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative; */
+
+    a {
+        margin: 20px auto;
+        padding: 10px;
+        font-family: SFMono;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+    }
+}
+
+.email::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1;
+}
+
+main {
+    counter-reset: section 0;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px;
+
+    main.fillHeight {
+        padding: 0px 150px;
+    }
+
+    section {
+        margin: 0px auto;
+        padding: 100px 0px;
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1080px) {
+    main.fillHeight {
+        padding: 0px 100px;
+    }
+}
+
+.title-page {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {
