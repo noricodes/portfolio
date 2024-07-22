@@ -35,12 +35,13 @@ header {
     width: 100%;
     text-align: end;
     align-content: center;
-    padding-right: 40px;
     top: 0;
     z-index: 11;
 }
 
 .top-nav-bar {
+    padding-right: 40px;
+
     ul {
         font-family: SFMono;
         font-size: 12px;
@@ -164,16 +165,22 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 200px 150px;
-
-    main.fillHeight {
-        padding: 0px 150px;
-    }
+    padding: 0px 150px;
 
     section {
         margin: 0px auto;
-        padding: 100px 0px;
+        /* padding: 100px 0px; */
         max-width: 1000px;
+
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 100vh;
+        height: 100vh;
+        padding: 0px;
     }
 }
 
