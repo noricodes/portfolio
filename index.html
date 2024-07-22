@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Naorin Khan</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-  </head>
+</head>
 
-  <body style="height: 100%;">
+<body style="height: 100%;">
     <header>
         <nav class="top-nav-bar">
             <ul>
@@ -25,12 +25,26 @@
 
     <div aria-orientation="left" class="socials">
         <ul>
-           <li><a href="https://github.com/noricodes" aria-label="GitHub" target="_blank" rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-           </a></li>
-           <li><a href="https://www.linkedin.com/in/naorinkhan" aria-label="LinkedIn" target="_blank" rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-           </a></li> 
+            <li><a href="https://github.com/noricodes" aria-label="GitHub" target="_blank" rel="noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="https://www.linkedin.com/in/naorinkhan" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a></li>
         </ul>
     </div>
 
@@ -55,34 +69,190 @@
             </div>
         </section>
 
-        <section id="jobs">
+        <section id="jobs"
+            style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
             <h2 class="numbered-heading">Where I've Worked</h2>
-            <nav>
-                <ul>
-                    <li><a rel="noopener" target="_blank" href="#ubisoft_exp">Ubisoft</a></li>
-                    <li><a rel="noopener" target="_blank" href="#2020_exp">2020 Technologies</a></li>
-                </ul>
-            </nav>
 
-            <div id="ubisoft_exp">
-                <h4>Data Platform Developer</h4>
-                <h5>[dates]</h5>
-                <ul>
-                    <li>description</li>
-                    <li>description</li>
-                    <li>description</li>
-                </ul>
+            <div class="jobs-content">
+
+                <div role="tablist" aria-label="Job tabs" class="jobs-list">
+
+                    <button id="tab-0" role="tab" tabindex="-1" aria-selected="true" aria-controls="panel-0" class="job-list-item">
+                        <span>Ubisoft</span>
+                    </button>
+
+                    <button id="tab-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel-1" class="job-list-item">
+                        <span>2020 Technologies</span>
+                    </button>
+                    
+                    <!-- <button id="tab-2" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-2" class="job-list-item">
+                        <span>Scout Studio</span>
+                    </button>
+                    
+                    <button id="tab-3" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-3" class="job-list-item">
+                        <span>Starry</span>
+                    </button>
+                    
+                    <button id="tab-4" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-4" class="job-list-item">
+                        <span>MullenLowe</span>
+                    </button> -->
+
+                    <div class="ative-job-item-bar"></div>
+                </div>
+
+                <div class="job-desc">
+                    <div id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="false" class="job-desc-item">
+                        <h3>
+                            <span>Data Platform Developer - Intern</span>
+                            <span class="company">&nbsp;@&nbsp;
+                                <a href="https://www.ubisoft.com/en-ca/" class="inline-link" rel="noopener noreferrer" target="_blank">Ubisoft</a>
+                            </span>
+                        </h3>
+
+                        <p class="range">May 2018 - Present</p>
+                        <div>
+                            <ul>
+                                <li>Deliver high-quality, robust production code for a diverse array of projects for
+                                    clients including Harvard Business School, Everytown for Gun Safety, Pratt
+                                    Institute, Koala Health, Vanderbilt University, The 19th News, and more</li>
+                                <li>Work alongside creative directors to lead the research, development, and
+                                    architecture of technical solutions to fulfill business requirements</li>
+                                <li>Collaborate with designers, project managers, and other engineers to transform
+                                    creative concepts into production realities for clients and stakeholders</li>
+                                <li>Provide leadership within engineering department through close collaboration,
+                                    knowledge shares, and mentorship</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" aria-hidden="true" class="job-desc-item" hidden="">
+                        <h3>
+                            <span>Web Platform Developer - Intern</span>
+                            <span class="company">&nbsp;@&nbsp;
+                                <a href="https://www.2020spaces.com/" class="inline-link" rel="noopener noreferrer" target="_blank">2020 Technologies</a>
+                            </span>
+                        </h3>
+
+                        <p class="range">July - December 2017</p>
+                        <div>
+                            <ul>
+                                <li>Developed and styled interactive web applications for Apple Music using Ember and
+                                    SCSS</li>
+                                <li>Built and shipped the Apple Music Extension for Facebook Messenger leveraging
+                                    third-party and internal API integrations</li>
+                                <li>Architected and implemented the user interface of Apple Music's embeddable web
+                                    player widget for in-browser user authorization and full song playback</li>
+                                <li>Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript
+                                    SDK for embedding Apple Music players into web applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-2" aria-hidden="true" class="job-desc-item" hidden="">
+                        <h3>
+                            <span>Developer</span>
+                            <span class="company">&nbsp;@&nbsp;
+                                <a href="https://web.northeastern.edu/scout/" class="inline-link" rel="noopener noreferrer" target="_blank">Scout Studio</a>
+                            </span>
+                        </h3>
+
+                        <p class="range">Spring 2016 &amp; 2017</p>
+                        <div>
+                            <ul>
+                                <li>Collaborated with other student designers and engineers on pro-bono projects to
+                                    create new brands, design systems, and websites for organizations in the community
+                                </li>
+                                <li>Built and delivered technical solutions according to stakeholder business
+                                    requirements</li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <!-- <div id="panel-3" role="tabpanel" tabindex="-1" aria-labelledby="tab-3" aria-hidden="true" hidden="" class="job-desc-item">
+                        <h3>
+                            <span>Software Engineer Co-op</span>
+                            <span class="company">&nbsp;@&nbsp;
+                                <a href="https://starry.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Starry</a>
+                            </span>
+                        </h3>
+
+                        <p class="range">July - December 2016</p>
+                        <div>
+                            <ul>
+                                <li>Engineered and improved major features of Starry's customer-facing Android web app
+                                    using ES6, Handlebars, Backbone, Marionette, and CSS</li>
+                                <li>Proposed and implemented scalable solutions to issues identified with cloud services
+                                    and applications responsible for communicating with the Starry Station internet
+                                    router</li>
+                                <li>Collaborated with designers and other developers to ensure thoughtful and consistent
+                                    user experiences across Starry’s iOS and Android mobile apps</li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <!-- <div id="panel-4" role="tabpanel" tabindex="-1" aria-labelledby="tab-4" aria-hidden="true" hidden="" class="job-desc-item">
+                        <h3>
+                            <span>Creative Technologist Co-op</span>
+                            <span class="company">&nbsp;@&nbsp;
+                                <a href="https://us.mullenlowe.com/" class="inline-link" rel="noopener noreferrer" target="_blank">MullenLowe</a>
+                            </span>
+                        </h3>
+
+                        <p class="range">July - December 2015</p>
+                        <div>
+                            <ul>
+                                <li>Developed, maintained, and shipped production code for client websites primarily
+                                    using HTML, CSS, Sass, JavaScript, and jQuery</li>
+                                <li>Performed quality assurance tests on various sites to ensure cross-browser
+                                    compatibility and mobile responsiveness</li>
+                                <li>Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and
+                                    more</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
             </div>
 
-            <div id="2020_exp">
-                <h4>Web Software Developer</h4>
-                <h5>[dates]</h5>
-                <ul>
-                    <li>description</li>
-                    <li>description</li>
-                    <li>description</li>
-                </ul>
-            </div>
+
+
+
+
+
+
+
+
+
+            <!-- <div class="inner-jobs">
+                <nav class="inner-jobs">
+                    <ul>
+                        <li class="active-item"><a rel="noopener" href="#ubisoft_exp">Ubisoft</a></li>
+                        <li class="active-item"><a rel="noopener" href="#2020_exp">2020 Technologies</a></li>
+                    </ul>
+                </nav>
+
+                <div id="ubisoft_exp">
+                    <h4>Data Platform Developer</h4>
+                    <h5>[dates]</h5>
+                    <ul>
+                        <li>description</li>
+                        <li>description</li>
+                        <li>description</li>
+                    </ul>
+                </div>
+
+                <div id="2020_exp">
+                    <h4>Web Software Developer</h4>
+                    <h5>[dates]</h5>
+                    <ul>
+                        <li>description</li>
+                        <li>description</li>
+                        <li>description</li>
+                    </ul>
+                </div>
+
+                <div class="inner-jobs active-nav-job-bar"></div>
+
+            </div> -->
         </section>
 
         <section id="projects">
@@ -109,6 +279,6 @@
     </main>
 
 
-  </body>
+</body>
 
 </html>
