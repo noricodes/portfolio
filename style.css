@@ -24,6 +24,8 @@ body {
 body #intro {
     font-family: SFMono;
     color: #64ffda;
+    font-size: 15px;
+    margin: 0px 0px 30px 4px;
 }
 
 header {
@@ -165,7 +167,7 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 0px 150px;
+    /* padding: 0px 150px; */
 
     section {
         margin: 0px auto;
@@ -207,6 +209,14 @@ main {
     font-size: clamp(40px, 8vw, 80px);
     font-weight: 600;
     color: #ccd6f6;
+    line-height: 1.1;
+}
+
+#title {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    /* color: #ccd6f6; */
     line-height: 1.1;
 }
 
