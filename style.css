@@ -186,7 +186,7 @@ main {
 
 @media (max-width: 1080px) {
     main.fillHeight {
-        padding: 0px 100px;
+        padding: 0px 130px;
     }
 }
 
@@ -202,6 +202,13 @@ main {
     padding: 0px;
 }
 
+#name {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
 
 
 /* width */
