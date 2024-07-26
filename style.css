@@ -672,6 +672,12 @@ img, svg, .gatsby-image-wrapper {
     position: relative;
 }
 
+.email-link:hover, .email-link:focus-visible {
+    outline: none;
+    box-shadow: 4px 4px 0 0 #64ffda;
+    transform: translate(-5px, -5px);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
