@@ -630,6 +630,7 @@ ul.skills-list li::before {
 .project-item .project-image a:hover, .project-item .project-image a:focus {
     background: transparent;
     outline: 0px;
+    filter: none;
 }
 
 .project-item:nth-of-type(2n+1) .project-image {
@@ -651,7 +652,7 @@ ul.skills-list li::before {
 .project-item .project-image .img {
     border-radius: 4px;
     mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1) brightness(90%);
+    /* filter: grayscale(100%) contrast(1) brightness(90%); */
 }
 
 img, svg, .gatsby-image-wrapper {
