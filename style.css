@@ -518,6 +518,7 @@ ul.skills-list li::before {
     background-color: #112240;
     color: #a8b2d1;
     font-size: 18px;
+    text-align: left;
 
     a {
         display: inline-block;
@@ -528,6 +529,20 @@ ul.skills-list li::before {
         text-decoration: none;
         text-decoration-skip-ink: auto;
     
+    }
+
+    em {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        font-family: SFMono;
+        font-size: 14px;
+        background-color: #0a192f;
+        max-width: fit-content;
+        text-decoration-skip-ink: auto;
+        font-style: normal;
+        padding: 1px 7px;
+        border-radius: 7px;
     }
 }
 
