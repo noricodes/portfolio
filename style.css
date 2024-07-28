@@ -155,12 +155,12 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
 
     section {
         margin: 0px auto;
         padding: 100px 0px;
-        max-width: 160vh;
+        max-width: 131vh;
         display: flex;
         -webkit-box-pack: center;
         -webkit-box-align: center;
