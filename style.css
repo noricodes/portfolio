@@ -155,11 +155,12 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
+    padding: 0px 100px;
 
     section {
         margin: 0px auto;
         padding: 100px 0px;
-        max-width: 1000px;
+        max-width: 160vh;
         display: flex;
         -webkit-box-pack: center;
         -webkit-box-align: center;
@@ -248,6 +249,13 @@ ul.skills-list li::before {
     }
 }
 
+@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+    .title-page {
+        height: auto;
+        padding-top: 100px;
+    }
+}
+
 #intro {
     font-family: SFMono;
     color: #64ffda;
@@ -257,7 +265,7 @@ ul.skills-list li::before {
 
 #name {
     margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 6vw, 80px);
     font-weight: 600;
     color: #ccd6f6;
     line-height: 1.1;
@@ -265,7 +273,7 @@ ul.skills-list li::before {
 
 #title {
     margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 5vw, 80px);
     font-weight: 600;
     line-height: 1.1;
 }
@@ -366,7 +374,7 @@ ul.skills-list li::before {
     outline-offset: 0px;
 }
 
-.ative-job-item-bar {
+.active-job-item-bar {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -375,7 +383,7 @@ ul.skills-list li::before {
     height: 42px;
     border-radius: 4px;
     background: #64ffda;
-    transform: translateY(calc(0* 42));
+    transform: translateY(calc(0* 42px));
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
@@ -754,6 +762,10 @@ img, svg, .gatsby-image-wrapper {
     outline: none;
     box-shadow: 4px 4px 0 0 #64ffda;
     transform: translate(-5px, -5px);
+}
+
+.about-section:hover, .jobs-section:hover, .projects-section:hover, .contact-section {
+    opacity: 1;
 }
 
 /* width */
