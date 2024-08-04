@@ -164,7 +164,7 @@ body {
 
 /* Main column */
 .main {
-    flex: 80%;
+    flex: 65%;
     padding: 20px;
 }
 
