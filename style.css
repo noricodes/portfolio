@@ -8,36 +8,71 @@
     src: url(fonts/SFMono/SFMono-Regular.woff2);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
 body {
-    margin: 0px;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+    font-family: Calibre;
+    margin: 0;
     background-color: #0a192f;
     color: #8892b0;
-    font-family: Calibre;
     font-size: 20px;
     line-height: 1.3;
+
+    section {
+        margin: 0px auto;
+        padding: 100px 0px;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    p {
+        margin: 0px 0px 15px;
+    }
+    
+    p > a {
+        display: inline-block;
+        position: relative;
+        color: #64ffda;
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+    }
+
+    p > a::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 1px;
+        position: relative;
+        bottom: 0.37em;
+        background-color: #64ffda;
+        opacity: 0.5;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
-header {
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
     background-color: rgba(10, 25, 47, 0.85);
-    backdrop-filter: blur(5px);
-    display: block;
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    text-align: end;
-    align-content: center;
-    top: 0;
-    z-index: 11;
-}
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
 
-.top-nav-bar {
-    padding-right: 40px;
-
-    ul {
+    ol {
         font-family: SFMono;
         font-size: 12px;
         list-style-type: decimal-leading-zero;
@@ -45,6 +80,7 @@ header {
         display: ruby;
     }
 
+    /* Style the navigation bar links */
     a {
         font-family: SFMono;
         font-size: 12px;
@@ -54,26 +90,38 @@ header {
         text-decoration: none;
     }
 
+    /* Change color on hover */
     a:hover {
         color: #64ffda;
-    } 
+    }
 
-    a#button {
+    #button {
         color: #64ffda;
         border-radius: 5px;
         border-style: solid;
         border-width: thin;
         padding: 12px 16px;
     }
+} 
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.socials {
-    width: 40px;
-    position: fixed;
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sticky {
+    position: sticky;
     bottom: 0px;
-    left: 40px;
-    right: auto;
-    z-index: 10;
     color: #a8b2d1;
 
     ul {
@@ -85,43 +133,6 @@ header {
         padding: 0px;
         list-style: none;
     }
-
-    a {
-        padding: 10px;
-        display: inline-block;
-        text-decoration: none;
-        text-decoration-line: none;
-        text-decoration-thickness: initial;
-        text-decoration-style: initial;
-        text-decoration-color: initial;
-        text-decoration-skip-ink: auto;
-        color: inherit;
-        position: relative;
-    }
-
-    svg {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-.socials::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0px auto;
-    background-color: #a8b2d1;
-}
-
-.email {
-    width: 40px;
-    position: fixed;
-    bottom: 0px;
-    left: auto;
-    right: 40px;
-    z-index: 10;
-    color: #a8b2d1;
 
     a {
         margin: 20px auto;
@@ -140,7 +151,7 @@ header {
     }
 }
 
-.email::after {
+.sticky::after {
     content: "";
     display: block;
     width: 1px;
@@ -149,110 +160,17 @@ header {
     background-color: #a8b2d1;
 }
 
-main {
-    counter-reset: section 0;
-    margin: 0px auto;
-    width: 100%;
-    max-width: 1600px;
-    min-height: 100vh;
-    /* padding: 0px 100px; */
+/* Main column */
+.main {
+    flex: 80%;
+    padding: 20px;
+}
 
-    section {
-        margin: 0px auto;
-        padding: 100px 0px;
-        max-width: 131vh;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-box-align: center;
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row, .navbar {   
         flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 1080px) {
-    main.fillHeight {
-        padding: 0px 130px;
-    }
-}
-
-p {
-    margin: 0px 0px 15px;
-}
-
-p > a {
-    display: inline-block;
-    position: relative;
-    color: #64ffda;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    p > a::after {
-        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    }
-}
-
-p > a::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 1px;
-    position: relative;
-    bottom: 0.37em;
-    background-color: #64ffda;
-    opacity: 0.5;
-}
-
-ul.skills-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(140px, 200px));
-    gap: 0px 10px;
-    padding: 0px;
-    margin: 20px 0px 0px;
-    overflow: hidden;
-    list-style: none;
-
-    li {
-        position: relative;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        font-family: SFMono;
-        font-size: 13px;
-    }
-}
-
-ul.skills-list li::before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    color: #64ffda;
-    font-size: 14px;
-    line-height: 12px;
-}
-
-.title-page {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: 100vh;
-    height: 100vh;
-    padding: 0px;
-
-    p {
-        margin: 20px 0px 0px;
-        max-width: 450px;
-    }
-}
-
-@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    .title-page {
-        height: auto;
-        padding-top: 100px;
     }
 }
 
@@ -315,14 +233,39 @@ ul.skills-list li::before {
     background-color: #233554;
 }
 
-.jobs-content {
-    display: flex;
+.about-section {
+    align-items: center;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(140px, 200px));
+        gap: 0px 10px;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-family: SFMono;
+        font-size: 13px;
+    }
+
+    ul li::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: #64ffda;
+        font-size: 14px;
+        line-height: 12px;
+    }
 }
 
-@media (min-width: 700px) {
-    .jobs-content {
-        min-height: 340px;
-    }
+.jobs-content {
+    display: flex;
 }
 
 .jobs-list {
@@ -367,11 +310,6 @@ ul.skills-list li::before {
 .job-list-item:hover, .job-list-item:focus-visible {
     color: #64ffda;
     outline: 0px;
-}
-
-:focus:not(:focus-visible) {
-    outline: none;
-    outline-offset: 0px;
 }
 
 .active-job-item-bar {
@@ -503,12 +441,6 @@ ul.skills-list li::before {
     font-family: SFMono;
     font-size: 13px;
     font-weight: 400;
-}
-
-@media (min-width: 768px) {
-    .project-item .project-title {
-        margin: 0px 0px 20px;
-    }
 }
 
 .project-item .project-title {
@@ -697,6 +629,7 @@ img, svg, .gatsby-image-wrapper {
     max-width: 600px;
     margin: 0px auto 100px;
     text-align: center;
+    align-items: center;
     /* padding: 100px 0px; */
 
     h2 {
@@ -768,22 +701,24 @@ img, svg, .gatsby-image-wrapper {
     opacity: 1;
 }
 
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
     background: #0a192f; 
-  }
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #233554; 
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}

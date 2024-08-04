@@ -1,306 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Naorin Khan</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Naorin Khan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body style="height: 100%;">
-    <header>
-        <nav class="top-nav-bar">
-            <ul>
-                <li><a rel="noopener" href="#about">About</a></li>
-                <li><a rel="noopener" href="#jobs">Experience</a></li>
-                <li><a rel="noopener" href="#projects">Projects</a></li>
-                <li><a rel="noopener" href="#contact">Contact</a></li>
-                <a rel="noopener" target="_blank" href="Naorin_Khan___CV.pdf" id="button">Resume</a>
-            </ul>
-        </nav>
-    </header>
-
-    <div aria-orientation="left" class="socials">
-        <ul>
-            <li><a href="https://github.com/noricodes" aria-label="GitHub" target="_blank" rel="noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-github">
-                        <title>GitHub</title>
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
-                    </svg>
-                </a></li>
-            <li><a href="https://www.linkedin.com/in/naorinkhan" aria-label="LinkedIn" target="_blank" rel="noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-linkedin">
-                        <title>LinkedIn</title>
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ol>
+            <li><a rel="noopener" href="#about">About</a></li>
+            <li><a rel="noopener" href="#jobs">Experience</a></li>
+            <li><a rel="noopener" href="#projects">Projects</a></li>
+            <li><a rel="noopener" href="#contact">Contact</a></li>
+            <a rel="noopener" target="_blank" href="Naorin_Khan___CV.pdf" id="button">Resume</a>
+        </ol>
     </div>
 
-    <div aria-orientation="right" class="email">
-        <a href="mailto:naorin_khan@hotmail.com">naorin_khan@hotmail.com</a>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <div class="sticky">
+                <ul>
+                    <li>
+                        <a href="https://github.com/noricodes" target="_blank" rel="noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/naorinkhan" target="_blank" rel="noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-linkedin">
+                                <title>LinkedIn</title>
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <section class="title-page">
+                <h1 id="intro">Hi, my name is</h1>
+                <h2 id="name">Naorin Khan</h2>
+                <h2 id="title">I create and maintain software.</h2>
+                <p>I’m a new grad software engineer looking for a job in the field of technology.
+
+                I thrive working with a team of dedicated and enthusiastic people!</p>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2 class="numbered-heading">About me</h2>
+                <div>
+                    <p>
+                        Hello! My name is Naorin and I enjoy creating things that live in computers. My interest in software development started back in High School when a team from 
+                        <a href="https://www.ericsson.com/en" rel="noopener noreferrer" target="_blank">Ericsson</a> partnered with my class to come up with new mobile app ideas.
+                        Fast-forward to today, and I’ve completed a DEC (Diploma of College Studies) in Computer Science Technology from 
+                        <a href="https://www.vaniercollege.qc.ca/" rel="noopener noreferrer" target="_blank">Vanier College</a> as well as a Bachelor's Degree in Software Engineering from 
+                        <a href="https://www.etsmtl.ca/" rel="noopener noreferrer" target="_blank">ETS (École de technologie supérieur)</a>. 
+                    </p>
+
+                    <p>
+                        During my time at ETS, I had the opportunity of interning as a developer for 
+                        <a href="https://www.2020spaces.com/" rel="noopener noreferrer" target="_blank">an interior design company</a> and 
+                        <a href="https://www.ubisoft.com/en-ca/" rel="noopener noreferrer" target="_blank">a gaming company</a>. 
+                    </p>
+
+                    <p>
+                        My main focus these days is building fun little personal projects to showcase my various skills.
+                        Here are a few technologies I’m very familiar with:
+                    </p>
+                </div>
+                <ul class="skills-list">
+                    <li>JavaScript (ES6+)</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>DevOps</li>
+                    <li>Git</li>
+                    <li>Testing</li>
+                </ul>
+            </section>
+
+            <section id="jobs" class="jobs-section"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
+                <h2 class="numbered-heading">Where I've Worked</h2>
+
+                <div class="jobs-content">
+
+                    <div class="jobs-list">
+
+                        <button id="tab-0" role="tab" tabindex="-1" aria-selected="true" aria-controls="panel-0" class="job-list-item">
+                            <span>Ubisoft</span>
+                        </button>
+
+                        <button id="tab-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel-1" class="job-list-item">
+                            <span>2020 Technologies</span>
+                        </button>
+
+                        <div id="active-bar" class="active-job-item-bar"></div>
+                    </div>
+
+                    <div class="job-desc">
+                        <div id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="false" class="job-desc-item">
+                            <h3>
+                                <span>Data Platform Developer - Intern</span>
+                                <span class="company">&nbsp;@&nbsp;
+                                    <a href="https://www.ubisoft.com/en-ca/" class="inline-link" rel="noopener noreferrer" target="_blank">Ubisoft</a>
+                                </span>
+                            </h3>
+
+                            <p class="range">Apr 2021 - Aug 2021</p>
+                            <div>
+                                <ul>
+                                    <li>Developed CLI command tools in Python for a new custom API to automate the ingestion of big data from databases into Kafka using a log-based Change Data Capture (CDC) methodology.</li>
+                                    <li>Implemented a standardized UML documentation strategy using PlantUML to efficiently document all tools within the API.</li>
+                                    <li>Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.</li>
+                                    <li>Created and executed unit tests using the Pytest framework in a production-like testing environment to ensure code quality and reliability.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" aria-hidden="true" class="job-desc-item" hidden="">
+                            <h3>
+                                <span>Web Platform Developer - Intern</span>
+                                <span class="company">&nbsp;@&nbsp;
+                                    <a href="https://www.2020spaces.com/" class="inline-link" rel="noopener noreferrer" target="_blank">2020 Technologies</a>
+                                </span>
+                            </h3>
+
+                            <p class="range">July - December 2017</p>
+                            <div>
+                                <ul>
+                                    <li>Implemented effective unit tests using the Mocha and Chai frameworks to improve the stability and reliability of modules in the Node.js-based App Engine.</li>
+                                    <li>Developed and executed integration tests to ensure seamless interaction between different modules within the App Engine, enhancing overall software quality.</li>
+                                    <li>Employed JQuery to enhance the user interface of the automation testing software, resulting in improved usability and a more intuitive experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2 class="numbered-heading">Personal Projects</h2>
+
+                <ul class="project-list">
+                    <li class="project-item" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
+                        <div class="project-content">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title">
+                                    <a href="https://noricodes.github.io/finding_teemo/" rel="noopener noreferrer" target="_blank">Finding Teemo</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        A marco-polo-style game where you search through a field of tall grass with your mouse cursor to find Teemo while avoiding landing on mushrooms!
+                                    </p>
+                                    <p>
+                                        Teemo is a 
+                                        <a href="https://www.leagueoflegends.com/en-us/" rel="noopener noreferrer" target="_blank">League of Legends</a> character who plants his hidden mushrooms around for enemies to unknowingly walk over and take damage. 
+                                        When Teemo stands in tall grass, he becomes invisible to the opponent. 
+                                        This game is a play on word from 'Finding Nemo' and puts together the original game's characteristics of Teemo!
+                                    </p>
+                                    <p>
+                                        This was coded entirely in VanillaJS in an effort to showcase the mathematical possibilities of the <em>canvas</em> tag in HTML.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>VS Code</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Velocity</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://noricodes.github.io/finding_teemo/" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                            <title>GitHub</title>
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://noricodes.github.io/finding_teemo/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                            <title>External Link</title>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-image">
+                            <a href="https://noricodes.github.io/finding_teemo/" rel="noopener noreferrer" target="_blank">
+                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                    <div style="max-width: 700px; display: block;">
+                                        <img alt="" role="presentation" aria-hidden="true" src="imgs/finding_teemo.png" style="max-width: 100%; display: block; position: static;">
+                                    </div>
+                                    <noscript></noscript>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="project-item" data-sr-id="5" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);">
+                        <div class="project-content">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/noricodes/minesweeper" rel="noopener noreferrer" target="_blank">Minesweeper</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>A simple Minesweeper game made in Java.</p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>IntelliJ</li>
+                                    <li>Java</li>
+                                    <li>JFrame</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/noricodes/minesweeper" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                            <title>GitHub</title>
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-image">
+                            <a href="https://github.com/noricodes/minesweeper" rel="noopener noreferrer" target="_blank">
+                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                    <div style="max-width: 700px; display: block;">
+                                        <img alt="" role="presentation" aria-hidden="true" src="imgs/minesweeper.png" style="max-width: 100%; display: block; position: static;">
+                                    </div>
+                                    <noscript></noscript>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                        
+                    <li class="project-item" data-sr-id="6" style="visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);">
+                        <div class="project-content">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title">
+                                    <a href="" rel="noopener noreferrer" target="_blank">[ Project Title Name ]</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>[ short descriptive paragraph ]</p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>[ tags ]</li>
+                                    <!-- <li>React</li>
+                                    <li>Express</li>
+                                    <li>Styled Components</li> -->
+                                </ul>
+                                <!-- <div class="project-links">
+                                    <a href="https://www.newline.co/courses/build-a-spotify-connected-app" aria-label="Course Link" class="cta" rel="noopener noreferrer" target="_blank">Learn More</a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="project-image">
+                            <a href="" rel="noopener noreferrer" target="_blank">
+                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+                                    <div style="max-width: 700px; display: block;">
+                                        <img alt="" role="presentation" aria-hidden="true" src="imgs/minesweeper.png" style="max-width: 100%; display: block; position: static;">
+                                    </div>
+                                    <noscript></noscript>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact" class="contact-section" data-sr-id="15" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
+                <h2 class="overline">What’s Next?</h2>
+                <h2 class="title">Get In Touch</h2>
+                <p>Whether you have a question, a job opportunity or just want to say hi, my inbox is always open!</p>
+                <a class="email-link" href="mailto:naorin_khan@hotmail.com" rel="noopener noreferrer" target="_blank">Say Hello 👋</a>
+            </section>
+        </div>
+
+        <div class="side">
+            <div class="sticky">
+                <a href="mailto:naorin_khan@hotmail.com">naorin_khan@hotmail.com</a>
+            </div>
+        </div>
     </div>
 
-    <main class="fillHeight">
-        <section class="title-page">
-            <h1 id="intro">Hi, my name is</h1>
-            <h2 id="name">Naorin Khan</h2>
-            <h2 id="title">I create and maintain software.</h2>
-            <p>I’m a new grad software engineer looking for a job in the field of technology.
-
-            I thrive working with a team of dedicated and enthusiastic people!</p>
-        </section>
-
-        <section id="about">
-            <h2 class="numbered-heading">About me</h2>
-            <div>
-                <p>
-                    Hello! My name is Naorin and I enjoy creating things that live in computers. My interest in software development started back in High School when a team from 
-                    <a href="https://www.ericsson.com/en" rel="noopener noreferrer" target="_blank">Ericsson</a> partnered with my class to come up with new mobile app ideas.
-                    Fast-forward to today, and I’ve completed a DEC (Diploma of College Studies) in Computer Science Technology from 
-                    <a href="https://www.vaniercollege.qc.ca/" rel="noopener noreferrer" target="_blank">Vanier College</a> as well as a Bachelor's Degree in Software Engineering from 
-                    <a href="https://www.etsmtl.ca/" rel="noopener noreferrer" target="_blank">ETS (École de technologie supérieur)</a>. 
-                </p>
-
-                <p>
-                    During my time at ETS, I had the opportunity of interning as a developer for 
-                    <a href="https://www.2020spaces.com/" rel="noopener noreferrer" target="_blank">an interior design company</a> and 
-                    <a href="https://www.ubisoft.com/en-ca/" rel="noopener noreferrer" target="_blank">a gaming company</a>. 
-                </p>
-
-                <p>
-                    My main focus these days is building fun little personal projects to showcase my various skills.
-                    Here are a few technologies I’m very familiar with:
-                </p>
-            </div>
-            <ul class="skills-list">
-                <li>JavaScript (ES6+)</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>DevOps</li>
-                <li>Git</li>
-                <li>Testing</li>
-            </ul>
-        </section>
-
-        <section id="jobs"
-            style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
-            <h2 class="numbered-heading">Where I've Worked</h2>
-
-            <div class="jobs-content">
-
-                <div role="tablist" aria-label="Job tabs" class="jobs-list">
-
-                    <button id="tab-0" role="tab" tabindex="-1" aria-selected="true" aria-controls="panel-0" class="job-list-item">
-                        <span>Ubisoft</span>
-                    </button>
-
-                    <button id="tab-1" role="tab" tabindex="0" aria-selected="false" aria-controls="panel-1" class="job-list-item">
-                        <span>2020 Technologies</span>
-                    </button>
-
-                    <div id="active-bar" class="active-job-item-bar"></div>
-                </div>
-
-                <div class="job-desc">
-                    <div id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="false" class="job-desc-item">
-                        <h3>
-                            <span>Data Platform Developer - Intern</span>
-                            <span class="company">&nbsp;@&nbsp;
-                                <a href="https://www.ubisoft.com/en-ca/" class="inline-link" rel="noopener noreferrer" target="_blank">Ubisoft</a>
-                            </span>
-                        </h3>
-
-                        <p class="range">Apr 2021 - Aug 2021</p>
-                        <div>
-                            <ul>
-                                <li>Developed CLI command tools in Python for a new custom API to automate the ingestion of big data from databases into Kafka using a log-based Change Data Capture (CDC) methodology.</li>
-                                <li>Implemented a standardized UML documentation strategy using PlantUML to efficiently document all tools within the API.</li>
-                                <li>Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.</li>
-                                <li>Created and executed unit tests using the Pytest framework in a production-like testing environment to ensure code quality and reliability.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" aria-hidden="true" class="job-desc-item" hidden="">
-                        <h3>
-                            <span>Web Platform Developer - Intern</span>
-                            <span class="company">&nbsp;@&nbsp;
-                                <a href="https://www.2020spaces.com/" class="inline-link" rel="noopener noreferrer" target="_blank">2020 Technologies</a>
-                            </span>
-                        </h3>
-
-                        <p class="range">July - December 2017</p>
-                        <div>
-                            <ul>
-                                <li>Implemented effective unit tests using the Mocha and Chai frameworks to improve the stability and reliability of modules in the Node.js-based App Engine.</li>
-                                <li>Developed and executed integration tests to ensure seamless interaction between different modules within the App Engine, enhancing overall software quality.</li>
-                                <li>Employed JQuery to enhance the user interface of the automation testing software, resulting in improved usability and a more intuitive experience.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="numbered-heading">Personal Projects</h2>
-
-            <ul class="project-list">
-                <li class="project-item" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
-                    <div class="project-content">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title">
-                                <a href="https://noricodes.github.io/finding_teemo/" rel="noopener noreferrer" target="_blank">Finding Teemo</a>
-                            </h3>
-                            <div class="project-description">
-                                <p>
-                                    A marco-polo-style game where you search through a field of tall grass with your mouse cursor to find Teemo while avoiding landing on mushrooms!
-                                </p>
-                                <p>
-                                    Teemo is a 
-                                    <a href="https://www.leagueoflegends.com/en-us/" rel="noopener noreferrer" target="_blank">League of Legends</a> character who plants his hidden mushrooms around for enemies to unknowingly walk over and take damage. 
-                                    When Teemo stands in tall grass, he becomes invisible to the opponent. 
-                                    This game is a play on word from 'Finding Nemo' and puts together the original game's characteristics of Teemo!
-                                </p>
-                                <p>
-                                    This was coded entirely in VanillaJS in an effort to showcase the mathematical possibilities of the <em>canvas</em> tag in HTML.
-                                </p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li>VS Code</li>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Velocity</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://noricodes.github.io/finding_teemo/" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                                        <title>GitHub</title>
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
-                                <a href="https://noricodes.github.io/finding_teemo/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-                                        <title>External Link</title>
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-image">
-                        <a href="https://noricodes.github.io/finding_teemo/" rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;">
-                                    <img alt="" role="presentation" aria-hidden="true" src="imgs/finding_teemo.png" style="max-width: 100%; display: block; position: static;">
-                                </div>
-                                <noscript></noscript>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-
-                <li class="project-item" data-sr-id="5" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);">
-                    <div class="project-content">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title">
-                                <a href="https://github.com/noricodes/minesweeper" rel="noopener noreferrer" target="_blank">Minesweeper</a>
-                            </h3>
-                            <div class="project-description">
-                                <p>A simple Minesweeper game made in Java.</p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li>IntelliJ</li>
-                                <li>Java</li>
-                                <li>JFrame</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/noricodes/minesweeper" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                                        <title>GitHub</title>
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-image">
-                        <a href="https://github.com/noricodes/minesweeper" rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;">
-                                    <img alt="" role="presentation" aria-hidden="true" src="imgs/minesweeper.png" style="max-width: 100%; display: block; position: static;">
-                                </div>
-                                <noscript></noscript>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                    
-                <li class="project-item" data-sr-id="6" style="visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);">
-                    <div class="project-content">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title">
-                                <a href="" rel="noopener noreferrer" target="_blank">[ Project Title Name ]</a>
-                            </h3>
-                            <div class="project-description">
-                                <p>[ short descriptive paragraph ]</p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li>[ tags ]</li>
-                                <!-- <li>React</li>
-                                <li>Express</li>
-                                <li>Styled Components</li> -->
-                            </ul>
-                            <!-- <div class="project-links">
-                                <a href="https://www.newline.co/courses/build-a-spotify-connected-app" aria-label="Course Link" class="cta" rel="noopener noreferrer" target="_blank">Learn More</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="project-image">
-                        <a href="" rel="noopener noreferrer" target="_blank">
-                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-                                <div style="max-width: 700px; display: block;">
-                                    <img alt="" role="presentation" aria-hidden="true" src="imgs/minesweeper.png" style="max-width: 100%; display: block; position: static;">
-                                </div>
-                                <noscript></noscript>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact" class="contact-section" data-sr-id="15" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;">
-            <h2 class="overline">What’s Next?</h2>
-            <h2 class="title">Get In Touch</h2>
-            <p>Whether you have a question, a job opportunity or just want to say hi, my inbox is always open!</p>
-            <a class="email-link" href="mailto:naorin_khan@hotmail.com" rel="noopener noreferrer" target="_blank">Say Hello 👋</a>
-        </section>
-    </main>
     <script src="index.js"></script>
-</body>
 
+</body>
 </html>
