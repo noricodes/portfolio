@@ -70,9 +70,12 @@ body {
 .navbar {
     display: flex;
     background-color: rgba(10, 25, 47, 0.85);
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
 
     ol {
         font-family: SFMono;
@@ -562,6 +565,16 @@ body {
 
     svg.feather {
         fill: none;
+    }
+}
+
+.home-logo {
+
+    padding-left: 5%;
+    
+    svg {
+        width: 40px;
+        height: 40px;
     }
 }
 
