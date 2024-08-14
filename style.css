@@ -33,6 +33,7 @@ body {
         align-content: center;
         flex-wrap: wrap;
         min-height: 100vh;
+        justify-content: center;
     }
 
     p {
@@ -646,7 +647,7 @@ img, svg, .gatsby-image-wrapper {
 
 .contact-section {
     max-width: 600px;
-    margin: 0px auto 100px;
+    /* margin: 0px auto 100px; */
     text-align: center;
     align-items: center;
     /* padding: 100px 0px; */
